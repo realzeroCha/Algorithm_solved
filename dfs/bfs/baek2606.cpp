@@ -12,7 +12,7 @@ int inspected = 0;
 void dfs(int node) {
     visited[node] = true;
 
-    for(int i: visited) {
+    for(int i: graph[node]) {
         if(visited[i]) {
            inspected++;
            dfs(i); 
